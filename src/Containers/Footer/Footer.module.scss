@@ -1,0 +1,111 @@
+@import "../../index.module.scss";
+
+footer {
+  //   display: flex;
+  //   flex-direction: column;
+  padding-block: 3rem;
+  .content {
+    width: 90%;
+    max-width: 52rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+
+    .item {
+      width: 50%;
+
+      h3 {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        font-size: 0.75rem;
+        color: $lightGrey;
+      }
+    }
+  }
+  hr {
+    margin-inline: auto;
+    color: #e8e7e8;
+  }
+
+  .logoSection {
+    display: flex;
+    justify-content: space-between;
+    .social {
+      display: none;
+    }
+    img {
+      width: 5rem;
+      margin: 0.7rem;
+    }
+    span {
+      color: $lightGrey;
+      font-size: 0.9rem;
+      margin: 0.7rem;
+    }
+  }
+}
+
+@media screen and(min-width:620px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 70rem;
+    margin-inline: auto;
+    .content {
+      justify-content: right;
+      .item {
+        width: 20%;
+      }
+      .item:nth-child(1),
+      .item:nth-child(2),
+      .item:nth-child(3) {
+        margin-right: 2rem;
+      }
+    }
+
+    hr {
+      display: none;
+    }
+
+    .logoSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      span {
+        font-size: 0.7rem;
+      }
+
+      .social {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 780px) {
+  footer {
+    .content {
+      .item {
+        h3 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.85rem;
+        }
+      }
+    }
+
+    .logoSection {
+      .social {
+        display: flex;
+        img {
+          margin-right: 0.5rem;
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}

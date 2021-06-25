@@ -1,0 +1,231 @@
+@import "../../index.module.scss";
+
+.container {
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  //   position: absolute;
+  //   top: 47.2rem;
+  width: 100%;
+
+  .subtext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3rem;
+    .rectangle {
+      width: 1rem;
+      height: 1px;
+      background-color: #d1d0d6;
+      margin-right: 0.5rem;
+    }
+    h5 {
+      margin: 0;
+      color: #8e8c95;
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+
+  .titleSection {
+    width: 100%;
+    max-width: 70rem;
+    display: grid;
+    place-items: center;
+    .title {
+      color: #000;
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      width: 84%;
+      max-width: 20rem;
+      line-height: 2rem;
+      letter-spacing: 0.38px;
+      margin-bottom: 0;
+    }
+
+    .subtitle {
+      text-align: center;
+      width: 95%;
+      max-width: 30rem;
+      color: #3b3a40;
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  .features {
+    width: 100%;
+    .featureList {
+      display: grid;
+      place-items: center;
+
+      img {
+        width: 3.5rem;
+      }
+      .feature {
+        display: grid;
+        place-items: center;
+        margin-bottom: 2rem;
+
+        .featureTitle {
+          color: #3b3a40;
+          font-size: 1rem;
+          font-weight: 700;
+          margin-bottom: 0;
+        }
+
+        .featureSubtitle {
+          color: #64626a;
+          font-size: 1rem;
+          line-height: 1.8rem;
+          font-weight: 400;
+          text-align: center;
+          width: 70%;
+        }
+
+        .learnMore {
+          align-items: center;
+
+          color: #1e5579;
+          a {
+            color: #1e5579;
+            text-decoration: none;
+            margin-right: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .hr {
+    width: 100%;
+    max-width: 75rem;
+    height: 1px;
+    background: #e8e7e8;
+  }
+}
+
+//FOR TABLET
+@media screen and(min-width:580px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    top: 46rem;
+    justify-content: left;
+    place-items: center;
+
+    .subtext {
+      width: 80%;
+      .rectangle {
+        width: 1.8rem;
+        height: 2px;
+      }
+
+      h5 {
+        font-size: 1rem;
+      }
+    }
+
+    .titleSection {
+      place-items: unset;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      .title {
+        text-align: left;
+        width: 40%;
+        margin-top: 0;
+        margin-left: 2.5rem;
+      }
+
+      .subtitle {
+        text-align: left;
+        width: 45%;
+        margin-right: 1.3rem;
+      }
+    }
+
+    .features {
+      width: 100%;
+      margin-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 6rem;
+      .featureList {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        img {
+          margin-left: 2rem;
+        }
+
+        .feature {
+          display: block;
+          margin-left: 2rem;
+          margin-bottom: 0;
+          .featureSubtitle {
+            text-align: left;
+            width: 89%;
+            margin-top: 0.56rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width:780px) {
+  .container {
+    padding-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .subtext {
+      margin-top: 8rem;
+      width: 70%;
+      max-width: 57rem;
+
+      .rectangle {
+        width: 3.5rem;
+      }
+    }
+    .titleSection {
+      display: flex;
+      flex-wrap: wrap;
+
+      .title {
+        width: 50%;
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+
+      .subtitle {
+        width: 50%;
+        font-size: 1.2rem;
+      }
+    }
+
+    .features {
+      //margin-left: 10%;
+      max-width: 80rem;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+
+      .featureList {
+        width: 42%;
+        justify-content: unset;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../index.module.scss";
+
+.container {
+  background: url("../../images/Pattern.png");
+  background-size: cover;
+  background-position: maxmin(100%, 100%);
+  width: 100%;
+  //height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .titleSection {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    h1 {
+      color: $darkBlue;
+      width: 90%;
+      max-width: 40rem;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      color: $darkBlue;
+      font-size: 1rem;
+      font-weight: 300;
+      width: 95%;
+      max-width: 40rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .buttons {
+    display: grid;
+    place-items: center;
+    .button1 {
+      @include darkBlueButton(20rem);
+      margin-bottom: 1rem;
+    }
+    .button2 {
+      @include whiteButton(20rem);
+    }
+  }
+
+  .dashboard {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+    img {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and(min-width:400px) {
+  .container {
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .button1 {
+        @include darkBlueButton(10rem);
+        margin-right: 1rem;
+        margin-bottom: 0;
+      }
+      .button2 {
+        @include whiteButton(10rem);
+      }
+    }
+  }
+}

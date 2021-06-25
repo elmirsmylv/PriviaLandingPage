@@ -1,0 +1,146 @@
+@import "../../../index.module.scss";
+
+.disabled {
+  display: none;
+}
+
+.container {
+  background-color: $lightBlue;
+  margin-inline: 1rem;
+  border: none;
+  border-radius: 12px;
+  padding-block: 1rem;
+  max-width: 22rem;
+
+  h3 {
+    color: $blue;
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    display: flex;
+    span {
+      color: #64626a;
+      font-size: 0.7rem;
+      font-weight: 400;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .title {
+    margin-left: 1.5rem;
+    color: #3b3a40;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .subtitle {
+    color: #64626a;
+    margin-left: 1.5rem;
+    width: 80%;
+    letter-spacing: 0.17px;
+  }
+
+  hr {
+    width: 80%;
+    margin-inline: auto;
+    opacity: 0.08;
+  }
+
+  .features {
+    margin-left: 1.5rem;
+
+    p {
+      display: flex;
+      align-items: center;
+      color: #64626a;
+      img {
+        padding-right: 0.7rem;
+      }
+    }
+  }
+
+  .button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    button {
+      @include whiteButton(80%);
+      color: #000;
+    }
+  }
+}
+
+@media screen and(min-width:720px) {
+  .disabled {
+    display: block;
+    background-color: $lightBlue;
+    margin-inline: 1rem;
+    border: none;
+    border-radius: 12px;
+    padding-block: 1rem;
+    max-width: 22rem;
+
+    h3 {
+      color: $blue;
+      font-size: 2.5rem;
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      align-items: center;
+      display: flex;
+      span {
+        color: #64626a;
+        font-size: 0.7rem;
+        font-weight: 400;
+        margin-left: 0.5rem;
+      }
+    }
+
+    .title {
+      margin-left: 1.5rem;
+      color: #3b3a40;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .subtitle {
+      color: #64626a;
+      margin-left: 1.5rem;
+      width: 80%;
+      letter-spacing: 0.17px;
+    }
+
+    hr {
+      width: 80%;
+      margin-inline: auto;
+      opacity: 0.08;
+    }
+
+    .features {
+      margin-left: 1.5rem;
+
+      p {
+        display: flex;
+        align-items: center;
+        color: #64626a;
+        img {
+          padding-right: 0.7rem;
+        }
+      }
+    }
+
+    .button {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      button {
+        @include whiteButton(80%);
+        color: #000;
+      }
+    }
+  }
+}

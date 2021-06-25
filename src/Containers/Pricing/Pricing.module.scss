@@ -1,0 +1,85 @@
+@import "../../index.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+
+  .titleSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      max-width: 35rem;
+    }
+    .subtitle {
+      color: #3b3a40;
+      font-weight: 400;
+      max-width: 90%;
+      letter-spacing: 0.24px;
+      text-align: center;
+    }
+
+    .billMonthly {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        color: #64626a;
+        font-size: 0.85rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-inline: 0.5rem;
+        position: relative;
+        img {
+          margin-left: 1.5rem;
+          width: 3.7rem;
+          position: absolute;
+          bottom: 1.2rem;
+          right: 0.3rem;
+        }
+      }
+    }
+  }
+
+  .cardTitles {
+    display: flex;
+    margin-top: 2rem;
+
+    p:nth-child(1),
+    p:nth-child(2) {
+      margin-right: 2rem;
+    }
+    p {
+      color: $darkBlue;
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    .active {
+      opacity: 1;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .container {
+    .cardTitles {
+      display: none;
+    }
+  }
+}

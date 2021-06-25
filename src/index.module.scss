@@ -1,0 +1,44 @@
+$darkBlue: #1e5579;
+$subtitle: #3b3a40;
+$orange: #ffedb6;
+$lightBlue: #d1e8ff;
+$darkOrange: #edb300;
+$blue: #49a4ff;
+$lightGrey: #64626a;
+
+@mixin darkBlueButton($width) {
+  border: none;
+  border-radius: 4px;
+  background-color: $darkBlue;
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: $width;
+  cursor: pointer;
+}
+@mixin whiteButton($width) {
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 1rem;
+  color: $darkBlue;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: $width;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
