@@ -6,7 +6,7 @@ This is a mobile, tablet and desktop responsive landing page app for Privia Secu
 
 [Privia Security](https://privia-landing-page.vercel.app/)
 
-### Toolds i use this project
+### Tools i use this project
 
 - JavaScript
 - ReactJs / Hooks
